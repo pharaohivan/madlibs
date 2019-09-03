@@ -31,8 +31,6 @@ randomize(verb)
 
 pronoun = input("\n\n\n\n\u001b[35mEnter a pronoun \n")
 
-
-
 print("\n\n\n\n\n\n\n\n\u001b[36mI was walking " + adjective[0] + " when I was beamed to a " + noun[0] + ".")
 print("\u001b[31mThat's when I started to " + verb[0] + ", I was terrified,")
 print("\u001b[32myou could see the " + noun[1] + " coming right after me.")
