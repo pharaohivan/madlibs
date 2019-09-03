@@ -1,26 +1,37 @@
+import random
 
-
-list = ["\u001b[31m", "\u001b[32m", "\u001b[33m", "\u001b[34m", "\u001b[35m", "\u001b[36m"]
-
-
+def randomize(speech):
+    random.shuffle(speech)
 
 print("\n\n\n\n\u001b[31mWelcome to Madlibs, a phrasal template word game where I, the programmer, prompt")
+
 print("\u001b[31myou for a list of words to subsitute for blanks in a story, before reading")
+
 print("\u001b[31mthe comical and often nonsensical story aloud.")
+
 print("\n\n\n\n\u001b[33mPress enter to continue")
 welcome = input()
+
 print("\n\n\n\n\u001b[36mLoading\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\nPress Enter")
 loading = input()
+
 print("\n\n\n\n\u001b[31mInstructions: Press enter after every word you enter.")
 
 print("\n\n\n\n\u001b[32mEnter 3 adjectives")
 adjective = [input(),input(),input()]
+randomize(adjective)
+
 print("\n\n\n\n\u001b[33mEnter 6 nouns")
 noun = [input(),input(),input(),input(),input(),input()]
+randomize(noun)
+
 print("\n\n\n\n\u001b[34mEnter 2 verbs")
 verb = [input(),input()]
+randomize(verb)
 
 pronoun = input("\n\n\n\n\u001b[35mEnter a pronoun \n")
+
+
 
 print("\n\n\n\n\n\n\n\n\u001b[36mI was walking " + adjective[0] + " when I was beamed to a " + noun[0] + ".")
 print("\u001b[31mThat's when I started to " + verb[0] + ", I was terrified,")
